@@ -89,7 +89,8 @@ img {
     gap: 2rem;
 }
 
-.product-grid h2 {
+.product-grid h2,
+.product-grid > p {
     grid-column: 1 / -1;
 }
 
@@ -100,5 +101,140 @@ img {
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
+
+.product-grid article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #C97C8D; 
+    color: white; 
+    text-align: center;
+    padding: 1.5rem 5%;
+    margin-top: 2rem;
+}
+
+.hero {
+    background-color: #FFF0F3; 
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.hero h2 {
+    color: #8B4A5A; 
+    letter-spacing: 0.05rem;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    color: #FFF0F3;
+    text-decoration: underline;
+}
+
+nav a:focus {
+    outline: 2px solid white;
+    outline-offset: 0.25rem;
+}
+
+nav a:active {
+    color: #8B4A5A; 
+}
+
+form {
+    max-width: 700px;
+    background-color: #FFF5F7; 
+    padding: 2rem;
+    border: 1px solid #E8C5CD; 
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #C9A5AD; 
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+button {
+    background-color: #C97C8D; 
+    color: white; 
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B56879; 
+}
+
+button:active {
+    background-color: #8B4A5A; 
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: 3px solid #8B4A5A;
+    outline-offset: 0.2rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #C97C8D;
+    outline: 2px solid #F2D5DC; 
+    outline-offset: 0.1rem;
+}
+
+.maintenance {
+    background-color: #FFF0F3; 
+    padding: 2rem;
+    border-left: 5px solid #C97C8D; 
+    border-radius: 0.5rem;
+}
+
+.maintenance h2 {
+    color: #8B4A5A;
+}
+
+.maintenance ul {
+    padding-left: 1.5rem;
+}
+
+.maintenance li {
+    margin-bottom: 0.75rem;
+}
+
+.product-grid > h2 {
+    color: #8B4A5A; 
+}
+
 
 
