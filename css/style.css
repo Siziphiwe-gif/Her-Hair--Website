@@ -1,9 +1,11 @@
-* {
+* /* CSS Reset - removes default browser spacing */
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base Styles - sets the default appearance for the website */
 body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
@@ -12,6 +14,7 @@ body {
     background-color: white;
 }
 
+/* Typography Styles - controls paragraph and heading appearance */
 p{
    font-size: 1rem;
     line-height: 1.6;
@@ -44,7 +47,7 @@ h4 {
     line-height: 1.4;
 }
 
-
+/* Header - styles the website header using the dusty pink colour and Flexbox layout */
 header {
     background-color: #C97C8D;
     color: white;
@@ -54,6 +57,7 @@ header {
     align-items: center;
 }
 
+/* Navigation - arranges navigation links horizontally with consistent spacing */
 nav {
     display: flex;
     gap: 1.5rem;
@@ -66,6 +70,7 @@ nav a {
     font-weight: 600;
 }
 
+/* Main Content - controls the width, spacing and alignment of the page content */
 main {
     width: 90%;
     max-width: 1200px;
@@ -77,12 +82,14 @@ section {
     margin-bottom: 2.5rem;
 }
 
+/* Responsive Images - makes images fit their containers without distortion */
 img {
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* Product Grid - displays products in three equal columns on desktop */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -94,6 +101,7 @@ img {
     grid-column: 1 / -1;
 }
 
+/* Product Cards - adds the blush pink background, border, spacing and shadow */
 .product-grid article {
     background-color: #FFF5F7; 
     padding: 1.5rem;
@@ -102,6 +110,7 @@ img {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
+/* Product Images - keeps product images consistent in size and appearance */
 .product-grid article img {
     width: 100%;
     height: 300px;
@@ -110,10 +119,7 @@ img {
     margin-bottom: 1rem;
 }
 
-footer p {
-    margin-bottom: 0;
-}
-
+/* Footer - styles the footer with the website's dusty pink colour scheme */
 footer {
     background-color: #C97C8D; 
     color: white; 
@@ -122,6 +128,11 @@ footer {
     margin-top: 2rem;
 }
 
+footer p {
+    margin-bottom: 0;
+}
+
+/* Hero Section - styles the welcome area with a soft blush pink background */
 .hero {
     background-color: #FFF0F3; 
     text-align: center;
@@ -139,6 +150,7 @@ footer {
     margin: 0 auto;
 }
 
+/* Navigation Pseudo-classes - provides visual feedback when navigation links are hovered, focused or active */
 nav a:hover {
     color: #FFF0F3;
     text-decoration: underline;
@@ -153,6 +165,7 @@ nav a:active {
     color: #8B4A5A; 
 }
 
+/* Forms - styles the enquiry and contact forms with consistent spacing and colours */
 form {
     max-width: 700px;
     background-color: #FFF5F7; 
@@ -180,6 +193,7 @@ textarea {
     font-family: inherit;
 }
 
+/* Buttons - styles form buttons using the website's dusty pink colour scheme */
 button {
     background-color: #C97C8D; 
     color: white; 
@@ -191,6 +205,7 @@ button {
     cursor: pointer;
 }
 
+/* Buttons - styles form buttons using the website's dusty pink colour scheme */
 button:hover {
     background-color: #B56879; 
 }
@@ -205,6 +220,7 @@ button:focus {
     outline-offset: 0.2rem;
 }
 
+/* Form Field Focus - highlights form fields when selected by the user */
 input:focus,
 select:focus,
 textarea:focus {
@@ -213,6 +229,7 @@ textarea:focus {
     outline-offset: 0.1rem;
 }
 
+/* Wig Maintenance Services - styles the maintenance section with the pink colour scheme */
 .maintenance {
     background-color: #FFF0F3; 
     padding: 2rem;
@@ -235,6 +252,88 @@ textarea:focus {
 .product-grid > h2 {
     color: #8B4A5A; 
 }
+
+/* Tablet Responsive Design - adjusts the layout, navigation and typography for screens 768px */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+     nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+     h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+     h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero {
+        padding: 2.5rem 1.5rem;
+    }
+
+      main {
+        width: 92%;
+    }
+
+     .product-grid article img {
+        height: 250px;
+    }
+
+}
+
+/* Mobile Responsive Design - adjusts the layout ,navigation and typography for screens 480 px and smaller */
+@media (max-width: 480px) {
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+     form {
+        padding: 1.25rem;
+    }
+}
+
+
+
+
+
 
 
 
