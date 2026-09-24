@@ -325,7 +325,12 @@ textarea:focus {
         grid-template-columns: 1fr;
     }
 
-     form {
+   .product-grid article img {
+    height: auto;
+    object-fit: contain;
+   }
+
+    form {
         padding: 1.25rem;
     }
 }
