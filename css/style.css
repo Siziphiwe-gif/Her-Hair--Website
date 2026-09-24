@@ -252,6 +252,23 @@ textarea:focus {
 .product-grid > h2 {
     color: #8B4A5A; 
 }
+/* About Section - styles the About Us page using the website's pink colour scheme */
+.about-section {
+    background-color: #FFF5F7;
+    padding: 2rem;
+    border: 1px solid #E8C5CD;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #8B4A5A;
+}
+
+.about-section h3 {
+    color: #8B4A5A;
+    margin-top: 1.5rem;
+}
 
 /* Tablet Responsive Design - adjusts the layout, navigation and typography for screens 768px */
 @media (max-width: 768px) {
