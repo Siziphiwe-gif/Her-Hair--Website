@@ -63,12 +63,15 @@ nav {
     gap: 1.5rem;
 }
 
+/* Navigation Links - styles the links and adds a smooth colour transition when hovered over */
 nav a {
     color: white; 
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
+
 
 /* Main Content - controls the width, spacing and alignment of the page content */
 main {
@@ -203,6 +206,7 @@ button {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Buttons - styles form buttons using the website's dusty pink colour scheme */
@@ -218,6 +222,28 @@ button:active {
 button:focus {
     outline: 3px solid #8B4A5A;
     outline-offset: 0.2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #C97C8D;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Changes the Shop Now button colour and moves it slightly upwards when hovered over */
+.btn:hover {
+    background-color: #8B4A5A;
+    transform: translateY(-3px);
+}
+
+/* Moves the Shop Now button back to its original position when clicked */
+.btn:active {
+    transform: translateY(0);
 }
 
 /* Form Field Focus - highlights form fields when selected by the user */

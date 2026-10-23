@@ -45,6 +45,24 @@ The Her Hair website was designed to adapt to different screen sizes using CSS m
 
 No lecturer feedback was provided for Part 1, so no feedback-specific corrections were required. Further improvements were made during Part 2 to improve the styling, responsiveness and overall consistency of the website.
 
+## Part 2 Feedback Improvements
+
+Based on the lecturer's feedback from Part 2, the following improvements were made to the Her Hair website:
+
+Added smooth CSS transitions to navigation links and buttons to improve user interaction.
+
+Added hover and active effects to make buttons more visually appealing.
+
+Added Show Now and Contact Us buttons to the Home page to improve navigation.
+
+Added Enquire Now  buttons below all four wigs on the Products page.
+
+Added one Enquire Now  button to the Wig Maintenance Services section to allow customers to enquire about services.
+
+Tested all new buttons and navigation links to ensure they function correctly.
+
+These improvements enhance the website's usability, visual appearance and overall user experience.
+
 
 ## Project Structure
 
