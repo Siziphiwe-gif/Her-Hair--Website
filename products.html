@@ -27,11 +27,21 @@
     <section class="product-grid">
         <h2>Our Wigs</h2>
 
+       <!-- Search box allows customers to search for wigs -->
+        <input type="search"
+            id="productSearch"
+            placeholder="Search for a wig..."
+            aria-label="Search for wigs">
+        <!-- Message displayed when no wigs match the search -->
+            <p id="noResults" style="display: none;">
+             No wigs found. Try again.
+            </p>
+
         <p>
             Explore our selection of stylish wigs designed for different
             looks and occasions.
         </p>
-        <article>
+        <article class="wig-item">
     <h3>Long Black Wig</h3>
     <img src="images/long-black-wig.png"
      srcset="images/long-black-wig-small.png 480w,
@@ -50,7 +60,7 @@
 
 </article>
 
-<article>
+<article class="wig-item">
     <h3>Burgundy Wig</h3>
 
     <img src="images/burgundy-wig.jpeg"
@@ -70,7 +80,7 @@
     <a href="enquiry.html" class="btn">Enquire Now</a>
 </article>
 
-<article>
+<article class="wig-item">
     <h3>Short Black Bob</h3>
 
     <img src="images/short-black-bob.jpeg"
@@ -89,7 +99,7 @@
      <a href="enquiry.html" class="btn">Enquire Now</a>
 </article>
 
-<article>
+<article class="wig-item">
     <h3>Lace Front Bob</h3>
 
    <img src="images/lace-front-bob.jpeg"
@@ -134,5 +144,7 @@
 <footer>
     <p>&copy; 2026 Her Hair. All rights reserved.</p>
 </footer>  
+
+<script src="js/script.js"></script>
 </body>
 </html>
