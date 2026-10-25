@@ -44,3 +44,34 @@ if (searchBox) {
         }
     });
 }
+
+// IMAGE GALLERY LIGHTBOX
+// Gets all the wig images
+let wigImages = document.querySelectorAll(".wig-image");
+
+// Gets the lightbox and its elements
+let lightbox = document.getElementById("lightbox");
+let lightboxImage = document.getElementById("lightboxImage");
+let closeLightbox = document.getElementById("closeLightbox");
+
+// Checks if the lightbox exists on the current page
+if (lightbox) {
+
+    // Opens the lightbox when a wig image is clicked
+    wigImages.forEach(function (image) {
+        image.addEventListener("click", function () {
+
+            // Displays the selected wig image in the lightbox
+            lightboxImage.src = image.currentSrc || image.src;
+            lightboxImage.alt = image.alt;
+
+            // Shows the lightbox
+            lightbox.style.display = "flex";
+        });
+    });
+
+    // Closes the lightbox when the X button is clicked
+    closeLightbox.addEventListener("click", function () {
+        lightbox.style.display = "none";
+    });
+}

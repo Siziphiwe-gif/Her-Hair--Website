@@ -49,7 +49,9 @@
      sizes="(max-width: 480px) 100vw,
             (max-width: 768px) 50vw,
             33vw"
-     alt="Long black lace front wig">
+     alt="Long black lace front wig"
+     class="wig-image">
+
     <p>
         A stylish long black wig with a sleek and natural-looking finish.
     </p>
@@ -69,7 +71,8 @@
      sizes="(max-width: 480px) 100vw,
             (max-width: 768px) 50vw,
             33vw"
-     alt="Burgundy straight wig">
+     alt="Burgundy straight wig"
+     class="wig-image">
 
     <p>
         A sleek burgundy wig with a bold colour and elegant finish.
@@ -89,7 +92,9 @@
      sizes="(max-width: 480px) 100vw,
             (max-width: 768px) 50vw,
             33vw"
-     alt="Short black bob wig">
+     alt="Short black bob wig"
+     class="wig-image">
+
     <p>
         A short black bob wig with a sleek finish and stylish side part.
     </p>
@@ -108,7 +113,9 @@
      sizes="(max-width: 480px) 100vw,
             (max-width: 768px) 50vw,
             33vw"
-     alt="Black lace front bob wig">
+     alt="Black lace front bob wig"
+     class="wig-image">
+
     <p>
         A stylish lace front bob with a natural-looking hairline
         and a sleek finish.
@@ -145,6 +152,18 @@
     <p>&copy; 2026 Her Hair. All rights reserved.</p>
 </footer>  
 
+<!-- Lightbox displays a larger version of the selected wig image -->
+<div id="lightbox" class="lightbox">
+
+    <!-- Button closes the enlarged image -->
+    <button type="button" id="closeLightbox" aria-label="Close image">
+        &times;
+    </button>
+
+    <!-- Displays the enlarged wig image -->
+    <img id="lightboxImage" src="" alt="Enlarged wig image">
+
+</div>
 <script src="js/script.js"></script>
 </body>
 </html>
