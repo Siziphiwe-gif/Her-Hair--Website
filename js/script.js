@@ -111,3 +111,26 @@ if (selectedProduct) {
 }
        
 }
+
+// FAQ ACCORDION
+// Gets all the FAQ question buttons
+let faqQuestions = document.querySelectorAll(".faq-question");
+
+// Checks each FAQ question
+faqQuestions.forEach(function (question) {
+
+    // Runs when a customer clicks a question
+    question.addEventListener("click", function () {
+
+        // Finds the answer directly after the question
+        let answer = question.nextElementSibling;
+
+        // Shows the answer if hidden, or hides it if visible
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+
+    });
+});
