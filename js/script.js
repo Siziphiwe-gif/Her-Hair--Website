@@ -75,3 +75,39 @@ if (lightbox) {
         lightbox.style.display = "none";
     });
 }
+
+// DYNAMIC PRODUCT INFORMATION
+// Finds the paragraph that will display the selected wig
+let selectedProduct = document.getElementById("selectedProduct");
+
+// Checks if we are on the Enquiry page
+if (selectedProduct) {
+
+    // Gets the information from the website URL
+    let urlParams = new URLSearchParams(window.location.search);
+
+    // Gets the selected wig name from the URL
+    let productName = urlParams.get("product");
+
+    // Displays the selected wig name and its price
+    if (productName) {
+    // Stores the wig names and their prices
+    let wigPrices = {
+        "Long Black Wig": 1850,
+        "Burgundy Wig": 1950,
+        "Short Black Bob": 1450,
+        "Lace Front Bob": 1650
+    };
+
+    // Gets the price of the selected wig
+    let price = wigPrices[productName];
+
+    // Displays the wig name and price
+    if (price !== undefined) {
+        selectedProduct.textContent =
+            "You are enquiring about: " + productName +
+            " - Price: R" + price.toLocaleString("en-ZA");
+    }
+}
+       
+}
