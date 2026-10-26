@@ -34,17 +34,31 @@
             Complete the enquiry form below and we will assist you.
         </p>
         <!-- Enquiry form -->
-<form>
+<form id="enquiryForm">
 
 
     <label for="fullname">Full Name:</label>
-   <input type="text" id="fullname" name="fullname" required>
+  <!-- Full name must contain at least 2 characters -->
+    <input type="text"
+       id="fullname"
+       name="fullname"
+       minlength="2"
+       maxlength="100"
+       title="Please enter your full name (at least 2 characters)"
+       required>
 
      <label for="email">Email Address:</label>
     <input type="email" id="email" name="email" required>
 
     <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required>
+    <!-- Phone number must contain exactly 10 digits -->
+    <input type="tel"
+       id="phone"
+       name="phone"
+       pattern="[0-9]{10}"
+       maxlength="10"
+       title="Please enter a 10-digit phone number"
+       required>
 
     <label for="enquiry-type">Type of Enquiry:</label>
 
@@ -72,9 +86,11 @@
 <textarea id="message" name="message" rows="5"></textarea> 
 
 <button type="submit">Submit Enquiry</button> 
+<p id="enquiryResponse" role="status" aria-live="polite"></p>
 
 </form>
-    </section>
+   
+</section>
 
 </main> 
 <!-- Footer section -->

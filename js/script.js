@@ -134,3 +134,102 @@ faqQuestions.forEach(function (question) {
 
     });
 });
+
+// ENQUIRY FORM - FILTER PRODUCTS AND SERVICES
+
+// Get the two dropdowns
+let enquiryType = document.getElementById("enquiry-type");
+let productService = document.getElementById("product-service");
+
+// Only run this code on the Enquiry page
+if (enquiryType && productService) {
+
+    // Run when the customer changes the enquiry type
+    enquiryType.addEventListener("change", function () {
+
+        // Clear the previous product or service selection
+        productService.value = "";
+
+        // Check every option in the second dropdown
+        Array.from(productService.options).forEach(function (option) {
+
+            // Keep the first "Select a product or service" option visible
+            if (option.value === "") {
+                option.hidden = false;
+            }
+
+            // Show only wig products
+            else if (enquiryType.value === "product") {
+                option.hidden = ![
+                    "long-black-wig",
+                    "burgundy-wig",
+                    "short-black-bob",
+                    "lace-front-bob"
+                ].includes(option.value);
+            }
+
+            // Show only maintenance services
+            else if (enquiryType.value === "maintenance") {
+                option.hidden = ![
+                    "wig-wash",
+                    "wig-styling",
+                    "wig-treatment",
+                    "wig-revamp"
+                ].includes(option.value);
+            }
+
+            // Hide all choices if no enquiry type is selected
+            else {
+                option.hidden = true;
+            }
+        });
+    });
+
+    // Set the correct options when the page first loads
+    enquiryType.dispatchEvent(new Event("change"));
+}
+
+// ENQUIRY FORM VALIDATION AND PROCESSING
+
+// Find the enquiry form and response paragraph
+let enquiryForm = document.getElementById("enquiryForm");
+let enquiryResponse = document.getElementById("enquiryResponse");
+
+// Only run this code on the Enquiry page
+if (enquiryForm && enquiryResponse) {
+
+    // Run when the customer submits the form
+    enquiryForm.addEventListener("submit", function (event) {
+
+        // Prevent the page from refreshing
+        event.preventDefault();
+
+        // Get the customer's details and selected option
+        let customerName = document.getElementById("fullname").value.trim();
+        let selectedOption = document.getElementById("product-service");
+        let selectedName = selectedOption.options[selectedOption.selectedIndex].text;
+
+        // Prices for wigs and maintenance services
+        let prices = {
+            "long-black-wig": 1850,
+            "burgundy-wig": 1950,
+            "short-black-bob": 1450,
+            "lace-front-bob": 1650,
+            "wig-wash": 250,
+            "wig-styling": 200,
+            "wig-treatment": 300,
+            "wig-revamp": 450
+        };
+
+        // Find the price of the selected product or service
+        let price = prices[selectedOption.value];
+
+        // Display a response to the customer
+        enquiryResponse.textContent =
+            "Thank you, " + customerName +
+            "! Your enquiry about " + selectedName +
+            " has been prepared. Estimated price: R" +
+            price.toLocaleString("en-ZA") +
+            ". Please contact Her Hair to confirm availability.";
+    });
+}
