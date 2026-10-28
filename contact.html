@@ -40,7 +40,7 @@
 
 <p>
     <strong>Email:</strong>
-    <a href="mailto:info@herhair.co.za">info@herhair.co.za</a>
+    <a href="mailto:herhair98@gmail.com">herhair98@gmail.com</a>
 </p>
 
 <h3>Business Hours</h3>
@@ -61,24 +61,53 @@
 <h3>Send Us a Message</h3>
 
 <!-- General contact form -->
-<form>
+<form id="contactForm"
+       action="https://formsubmit.co/herhair98@gmail.com"
+      method="POST">  
 <label for="fullname">Full Name:</label>
-<input type="text" id="fullname" name="fullname" required>
-
+<input type="text"
+       id="fullname"
+       name="fullname"
+       minlength="2"
+       maxlength="100"
+       title="Please enter your full name (at least 2 characters)"
+       required>
 <label for="email">Email Address:</label>
 <input type="email" id="email" name="email" required> 
 
 <label for="phone">Phone Number:</label>
-<input type="tel" id="phone" name="phone"> 
+<input type="tel"
+       id="phone"
+       name="phone"
+       pattern="[0-9]{10}"
+       maxlength="10"
+       title="Please enter a 10-digit phone number" required>
 
 <label for="subject">Subject:</label>
 <input type="text" id="subject" name="subject" required>
 
 <label for="message">Message:</label>
+<select id="message-type" name="message-type" required>
+    <option value="">Select a message type</option>
+    <option value="general">General Enquiry</option>
+    <option value="product">Product Question</option>
+    <option value="service">Maintenance Service Question</option>
+    <option value="feedback">Feedback</option>
+</select>
 
-<textarea id="message" name="message" rows="5" required></textarea> 
+<textarea
+    id="message"
+    name="message"
+    rows="5"
+    minlength="10"
+    maxlength="1000"
+    title="Please enter a message with at least 10 characters"
+    required>
+</textarea>
 
 <button type="submit">Send Message</button> 
+<!-- Displays feedback after the customer submits the contact form -->
+<p id="contactResponse" role="status" aria-live="polite"></p>
 
 </form>
     </section>

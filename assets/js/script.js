@@ -233,3 +233,33 @@ if (enquiryForm && enquiryResponse) {
             ". Please contact Her Hair to confirm availability.";
     });
 }
+
+// CONTACT FORM VALIDATION AND PROCESSING
+
+// Find the contact form and response paragraph
+let contactForm = document.getElementById("contactForm");
+let contactResponse = document.getElementById("contactResponse");
+
+// Only run this code on the Contact page
+if (contactForm && contactResponse) {
+
+    // Run when the customer submits the form
+    contactForm.addEventListener("submit", function (event) {
+
+      // Check whether the form contains valid information
+    if (!contactForm.checkValidity()) {
+
+        // Stop submission if information is invalid
+        event.preventDefault();
+
+        // Show the browser's validation messages
+        contactForm.reportValidity();
+
+        return;
+    }
+
+    // If all information is valid, the browser submits
+    // the form to FormSubmit using the HTML form action.
+
+});
+}
