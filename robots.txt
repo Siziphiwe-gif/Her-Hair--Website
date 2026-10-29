@@ -1,0 +1,7 @@
+
+# Allow search engines to crawl the Her Hair website
+User-agent: *
+Allow: /
+
+# Location of the website sitemap
+Sitemap: https://siziphiwe-gif.github.io/Her-Hair--Website/sitemap.xml 

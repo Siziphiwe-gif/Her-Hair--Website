@@ -1,0 +1,32 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- SEO: Sitemap for the Her Hair website -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home page -->
+    <url>
+        <loc>https://siziphiwe-gif.github.io/Her-Hair--Website/index.html</loc>
+    </url>
+
+    <!-- About page -->
+    <url>
+        <loc>https://siziphiwe-gif.github.io/Her-Hair--Website/about.html</loc>
+    </url>
+
+    <!-- Products page -->
+    <url>
+        <loc>https://siziphiwe-gif.github.io/Her-Hair--Website/products.html</loc>
+    </url>
+
+    <!-- Enquiry page -->
+    <url>
+        <loc>https://siziphiwe-gif.github.io/Her-Hair--Website/enquiry.html</loc>
+    </url>
+
+    <!-- Contact page -->
+    <url>
+        <loc>https://siziphiwe-gif.github.io/Her-Hair--Website/contact.html</loc>
+    </url>
+
+</urlset>
