@@ -65,19 +65,17 @@ if (lightbox) {
             lightboxImage.src = image.currentSrc || image.src;
             lightboxImage.alt = image.alt;
 
-            // Shows the lightbox
             lightbox.style.display = "flex";
         });
     });
 
-    // Closes the lightbox when the X button is clicked
+    // Closes the lightbox when the X button is clicked 
     closeLightbox.addEventListener("click", function () {
         lightbox.style.display = "none";
     });
 }
 
 // DYNAMIC PRODUCT INFORMATION
-// Finds the paragraph that will display the selected wig
 let selectedProduct = document.getElementById("selectedProduct");
 
 // Checks if we are on the Enquiry page
@@ -137,7 +135,6 @@ faqQuestions.forEach(function (question) {
 
 // ENQUIRY FORM - FILTER PRODUCTS AND SERVICES
 
-// Get the two dropdowns
 let enquiryType = document.getElementById("enquiry-type");
 let productService = document.getElementById("product-service");
 
@@ -178,7 +175,7 @@ if (enquiryType && productService) {
                 ].includes(option.value);
             }
 
-            // Hide all choices if no enquiry type is selected
+
             else {
                 option.hidden = true;
             }
@@ -245,6 +242,7 @@ if (contactForm && contactResponse) {
 
     // Run when the customer submits the form
     contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
       // Check whether the form contains valid information
     if (!contactForm.checkValidity()) {
@@ -258,8 +256,39 @@ if (contactForm && contactResponse) {
         return;
     }
 
-    // If all information is valid, the browser submits
-    // the form to FormSubmit using the HTML form action.
+    // Collect the customer's contact form information
+    const templateParams = {
+        name: document.getElementById("fullname").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message_type: document.getElementById("message-type").value,
+        message: document.getElementById("message").value
+    };
+
+    // Show feedback while the email is being sent
+    contactResponse.textContent = "Sending your message...";
+
+    // Send the message through EmailJS
+    emailjs.send("service_re38by8", "template_nsmbfqq", templateParams)
+        .then(function () {
+            contactResponse.textContent =
+                "Your message has been sent successfully!";
+            contactForm.reset();
+        })
+        .catch(function (error) {
+            contactResponse.textContent =
+                "Sorry, your message could not be sent. Please try again.";
+            console.error("EmailJS error:", error);
+        });
+
 
 });
+}
+
+// Initialise EmailJS for the Her Hair Contact form
+if (typeof emailjs !== "undefined") {
+    emailjs.init({
+        publicKey: "TxSIJnOYGPtpi-HR-"
+    });
 }
