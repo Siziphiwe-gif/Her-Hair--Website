@@ -170,31 +170,56 @@ These changes improved the website's navigation, usability and overall customer 
 ## References
 
 1001 Fonts ,2026. Fashion Fonts. [online] Available at:< https://www.1001fonts.com/fashion-fonts.html > [Accessed 9 August 2026]
+
 19Digital,2024. Benefits of having a website for small business in South Africa. [online] Available at: <https://19digital.co.za/benefits-of-having-a-website-for-small-business-in-south-africa/ > [Accessed 18 August 2026].
+
 Academind,2018. Visual Studio Code Tutorial for Beginners – Introduction. [video online] Available at: <https://youtu.be/VqCgcpAypFQ >[Accessed 4 August 2026].
+
 Bro Code, 2021.Learn CSS in 1 hour. [video online]. Available at: <https://www.youtube.com/watch?v=wRNinF7YQqQ > [Accessed 6 September 2026].
-Cloudflare, 2026.What Is Robots.txt? | How a Robots.txt File Works. [online]. Available at:< https://www.cloudflare.com/learning/bots/what-is-robots-txt/> [Accessed 27 October 2026]. 
+
+Cloudflare, 2026.What Is Robots.txt? | How a Robots.txt File Works. [online]. Available at:< https://www.cloudflare.com/learning/bots/what-is-robots-txt/> [Accessed 27 October 2026].
+
 CodeEasy, 2025.Send Email Using EmailJS and HTML Form | 2025 NEW Method!.[video online]. Available at:< https://youtu.be/lRFh7Ep35lc?si=DAjnwwtUbS09UCwl> [Accessed 29 October 2026].
+
 Code With Er, 2026.Build a Dynamic Product Page Using JavaScript, HTML3 & CSS3. [video online]. Available at: <https://youtu.be/L7LHjeRRaeE?si=r7xN7h262QSohFPh> [Accessed 26 October 2026].
+
 Cosmopolitan,2021. How to Style a Wig. [online] Available at:< https://www.cosmopolitan.com/style-beauty/beauty/a35917183/how-to-style-wig/> [Accessed 20 August 2026].
+
 Framework Tech,2023. Master HTML with Visual Studio Code | Beginner's Guide. [video online] Available at: <https://youtu.be/fzWdtSGRVNo > [Accessed 9 August 2026].
+
 Future Fullstack ,2025.Become a CSS Media Queries & Responsive Design Pro! Learn EVERYTHING You Need to Know In Detail.[video online]. Available at: <https://www.youtube.com/watch?v=webzXg0q_x4 >[Accessed 12 September 2026].
+
 GeeksforGeeks,n.d. Create a Contact Form using HTML CSS & JavaScript. [online] Available at :< https://www.geeksforgeeks.org/javascript/create-a-contact-form-using-html-css-javascript/> (Accessed: 27 October 2026). 
+
 Google Search Central, n.d. SEO Guide for Web Developers. [online]. Available at: <https://developers.google.com/search/docs/fundamentals/get-started-developers> (Accessed 28 October 2026). 
+
 JavaScript Academy, 2021. Form validation using Javascript on the client side for beginners. [video online]. Available at:< https://youtu.be/CYlNJpltjMM?si=7pcWoE1QWWdLefqf> [Accessed 26 October 2026].
+
 Kevin Powell ,2024. A practical guide to responsive web design. [video online]. Available at: <https://www.youtube.com/watch?v=x4u1yp3Msao > [Accessed 18 September 2026].
+
 Munyaradzi, F,2023. Does your small business really need a website? SimplyBiz. [online]Available at: <https://simplybiz.zendesk.com/hc/en-us/articles/360020647451-Does-your-small-business-really-need-a-website > [Accessed 20 August 2026].
+
 Patel, N. ,2026. How to Create a Robots.txt File: A Complete Guide for 2026. [blog]. Available at:< https://neilpatel.com/blog/robots-txt/> [Accessed: 27 October 2026] .
+
 Qharny,n.d. Contact_Form/index.html. [online]. Available at: <https://github.com/Qharny/Contact_Form/blob/main/index.html> [Accessed 29 October 2026] .
+
 SMA Marketing ,2022. XML Sitemaps: What They Are, Why They Matter, How To Create & Submit One. [video online]. Available at:< https://youtu.be/yRV0-TscGbk?si=2F1ykdN5wkJRg0x6> [Accessed 27 October 2026].
+
 Spriggle, A. ,2024. Top 10 Website Functionalities to Improve Your Site in 2024. Clarity Ventures. [online]Available at:< https://www.clarity-ventures.com/blog/ten-key-elements-every-business-website-should-have-functionality-and-design-ed> [Accessed: 9 August 2026].
+
 Stack Overflow,2023. How can I create a dynamic product page using HTML, CSS, and Javascript. [online]. Available at :< https://stackoverflow.com/questions/74665951/how-can-i-create-a-dynamic-product-page-using-html-css-and-javascript> (Accessed: 27 October 2026). 
+
 Steve Builds Websites, 2026.How to Embed a Google Map on Your Website. [video online]. Available at:< https://youtu.be/OR_WTJwNQo8?si=JxIKYbmu9PpeOz8D> [Accessed 26 October 2026].
+
 W3Schools,2026. HTML Tutorial. [online]Available at: <https://www.w3schools.com/html/> [Accessed 4 August 2026].
 W3Schools, n.d. JavaScript Introduction. [online] Available at: <https://www.w3schools.com/js/js_intro.asp> [Accessed 20 October 2026]. 
+
 Web Dev Simplified, 2019.JavaScript Form Validation. [video online]. Available at: <https://youtu.be/In0nB0ABaUk?si=wxOhN9ZHJOLeiQ6f> [Accessed 26 October 2026].
+
 Xneelo,2026. Domains. [online] Available at: https://xneelo.co.za/domains/ [Accessed 19 August 2026].
+
 Xneelo,2026. SSL Digital Certificates. [online] Available at:< https://xneelo.co.za/help-centre/website/ssl-digital-certificates/> [Accessed 20 August 2026].
+
 Xneelo,2026. Web Hosting. [online] Available at:< https://xneelo.co.za/web-hosting/> [Accessed 20 August 2026].
 
 

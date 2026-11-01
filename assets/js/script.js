@@ -2,7 +2,7 @@
 // Gets the search box from the Products page
 let searchBox = document.getElementById("productSearch");
 
-// Gets the message displayed when no wigs match the search
+//  Message displayed when no wigs match the search
 let noResults = document.getElementById("noResults");
 
 // Gets all four wig products
@@ -23,7 +23,6 @@ if (searchBox) {
         // Checks each wig
         wigs.forEach(function (wig) {
 
-            // Gets the wig name and changes it to lowercase
             let wigName = wig.querySelector("h3").textContent.toLowerCase();
 
            // Shows matching wigs and counts them
@@ -46,7 +45,6 @@ if (searchBox) {
 }
 
 // IMAGE GALLERY LIGHTBOX
-// Gets all the wig images
 let wigImages = document.querySelectorAll(".wig-image");
 
 // Gets the lightbox and its elements
@@ -111,7 +109,7 @@ if (selectedProduct) {
 }
 
 // FAQ ACCORDION
-// Gets all the FAQ question buttons
+
 let faqQuestions = document.querySelectorAll(".faq-question");
 
 // Checks each FAQ question

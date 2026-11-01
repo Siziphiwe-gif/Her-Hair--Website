@@ -506,6 +506,26 @@ textarea:focus {
     margin-top: 15px;
 }
 
+/* Styling for featured links on the Home page */
+.featured-link {
+    color: #8B4A5A;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Change the link colour when the mouse hovers over it */
+.featured-link:hover {
+    color: #C97C8D;
+    text-decoration: underline;
+}
+
+/* Make the links visible when using keyboard navigation */
+.featured-link:focus-visible {
+    outline: 2px solid #8B4A5A;
+    outline-offset: 3px;
+}
+
 
 
 
